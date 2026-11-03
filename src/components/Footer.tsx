@@ -40,8 +40,21 @@ export default function Footer({ onOpenQualifications }: FooterProps) {
           </button>
         </div>
 
-        <div className="text-xs text-[#8c847a] font-mono">
-          &copy; {currentYear} {USER_INFO.name}. Administrative Support &amp; Operations.
+        <div className="flex flex-col md:items-end gap-1 text-xs text-[#8c847a]">
+          <div className="font-mono">
+            &copy; {currentYear} {USER_INFO.name}. Administrative Support &amp; Operations.
+          </div>
+          <div className="text-[11px] text-[#736c64]">
+            Created by{' '}
+            <a
+              href="https://www.facebook.com/Kejzhin/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-[#221f1d] hover:text-[#000000] underline decoration-[#b8ae9f] hover:decoration-[#221f1d] transition-colors"
+            >
+              Jeric de los reyes
+            </a>
+          </div>
         </div>
       </div>
     </footer>
